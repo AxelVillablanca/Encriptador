@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Viga&display=swap');
+body{
+    background-color: #e3dae8;
+    color: #565b7a;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+main{
+    display: inline-flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.area1{
+    flex-direction: column;
+}
+
+h1,h2{
+    color: #df447a; 
+    font-family: "Viga", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h1{
+    font-size: 40px;
+    font-weight: 600;
+    margin: 25px;
+}
+
+textarea{
+    background-color: #e3dae8;
+    justify-content: start;
+    margin: 20px;
+    border: 0;
+    width: 550px;
+    min-width: 450px;
+    height: 60vh;
+    max-height: 2000px;
+    text-overflow: ellipsis;
+    resize: none;
+    font-size: 20px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    
+}
+textarea:focus{
+    border: 0;
+    outline: none;
+    text-overflow: ellipsis;
+}
+.tituloD{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+}
+.desencriptado{
+    width: 300px;
+    min-width: 200px;
+    height: auto;
+    min-height: 60vh;
+    padding: 8px;
+    border-radius: 10px;
+    border: 2px solid #584372;
+    background-color: #f3f6ff;
+    color: #000;
+}
+.textosEncriptados{
+    color: #000;
+    margin: 0;
+    padding: 10px;
+    text-decoration: none;
+}
+.encriptado{
+    margin-top: 5px;
+    list-style:circle;
+    font-size: 18px;
+}
+.botones{
+    display: flex;
+    justify-content: center;
+}
+
+button{
+    border: none;
+    width: 150px;
+    height: 50px;
+    margin: auto;
+    border-radius: 8px;
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    font-style: normal;
+}
+button:hover{
+    scale: 1.1;
+    cursor: pointer;
+}
+
+#boton1{
+    background-color: #df447a;
+    color: #e3dae8;
+}
+#boton2{
+    background-color: #584372;
+    color: #d4de97;
+}
