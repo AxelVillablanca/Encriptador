@@ -1,18 +1,18 @@
 console.log("La paleta de colores fue sacada del tomo 14 de Chainsaw Man ;)")
-
+console.log("la paleta de colores fue sacada del tomo 14 de chainsaw man")
 const botonEncriptar = document.getElementById("boton1");
 const botonDesencriptar = document.getElementById("boton2");
 const rawText = document.getElementById("texto");
 const excluir = /[A-ZÁÉÍÓÚÑáéíóúñ!@#$%^&*()_+\-=[\]{};':",./<>?\|]/;
 const textoVacio = "";
-
+const textosEncriptados = document.querySelector('.textosEncriptados')
 
 
 
 //Comprobar Mayusculas y simbolos
 function comprobar(textoComprobado){
     if(excluir.test(textoComprobado)){
-        alert("Texto no Valido");
+        alert("El texto debe estar en minusculas y no puede tener simbolos!");
         return textoVacio
     }else{
         return textoComprobado
@@ -115,4 +115,16 @@ rawText.addEventListener("keydown", function(e){
 
 //Copiar texto
 
+textosEncriptados.addEventListener('click', (event)=>{
+    if(event.target && event.target.matches('li.encriptado')){
+        const textoCopiado = event.target.textContent;
+        navigator.clipboard.writeText(textoCopiado.trim())
+        .then(() =>{
+            console.log('Texto copiado: ', textoCopiado);
+        })
+        .catch(err =>{
+            console.log('Error al copiar al portapapeles: ',err);
+        });
+    }
+});
 

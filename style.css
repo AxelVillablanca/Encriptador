@@ -11,7 +11,7 @@ main{
     display: inline-flex;
     justify-content: center;
     width: 100%;
-    gap: 400px;
+    gap: 200px;
     margin-top: 30px;
 }
 
@@ -43,13 +43,12 @@ h1{
     margin: 25px;
 }
 
-textarea{
+textarea{   
     background-color: #e3dae8;
     justify-content: start;
     margin: 20px;
     border: 0;
-    width: 550px;
-    min-width: 450px;
+    width: 500px;
     height: 60vh;
     max-height: 2000px;
     text-overflow: ellipsis;
@@ -90,9 +89,15 @@ textarea:focus{
     text-decoration: none;
 }
 .encriptado{
-    margin-top: 5px;
+    margin: 5px 0 0 10px;
+    padding: 5px;
     list-style:circle;
     font-size: 18px;
+    cursor: pointer;
+
+    &&:active{
+        scale: 1.07;
+    }
 }
 .botones{
     display: flex;
