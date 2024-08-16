@@ -99,6 +99,9 @@ textarea:focus{
         scale: 1.07;
     }
 }
+
+.reglas{text-align: center; font-weight: 500; }
+
 .botones{
     display: flex;
     justify-content: center;
@@ -135,4 +138,57 @@ button:hover{
 #boton2{
     background-color: #584372;
     color: #d4de97;
+}
+
+
+@media (max-width:1000px) {
+    main{margin-top: 15px; gap: 50px;}
+    h1{font-size: 36px;}
+    textarea{width: 350px;}
+    .desencriptado{width: 280px;}
+}
+
+@media (max-width:700px) {
+    body{margin: 0; padding: 0;}
+    main{flex-direction: column; width: 100vw;}
+    h1{font-size: 36px;}
+    .area1{margin: auto; min-width: 360px; max-width: 650px;}
+
+    textarea{width: 350px;height: 300px;}
+    button{width: 150px; border-radius: 8px; font-size: 18px; font-weight: 600;}
+
+    .desencriptado{
+        width: 360px;
+        height: 400px;
+        min-height: 600px;
+        margin: auto;
+        margin-bottom: 20px;
+        padding: 0;
+        justify-content: center;
+    }
+
+    .encriptado{
+        font-size: 17px;
+        font-weight: 450;
+        &&:active{
+            scale: 1.05;
+        }
+    }
+    .textosEncriptados{padding: 15px;}
+}
+
+@media (max-width:420px) {
+    h1{font-size: 34px;}
+    #llave{width: 65px;}
+
+    .area1{margin: auto; min-width: 250px; max-width: 400px;}
+    textarea{width: 320px; height: 300px;}
+
+    button{margin-top: 15px; width: 160px; border-radius: 8px; font-size: 18px; font-weight: 600;}
+
+    .reglas{font-size: 15px; height: 40px; text-align: auto;}
+    .titulo{padding: 20px 10px;}
+    .tituloD{font-size: 26px;}
+    .mensaje{font-size: 16px}
+    .desencriptado{width: 330px; height: 450px; min-height: 650px;}
 }
